@@ -1,0 +1,62 @@
+<style>
+.mode-landscape .sl-benefits-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+.mode-portrait .sl-benefits-grid {
+  grid-template-columns: 1fr;
+}
+.mode-landscape .sl-roi-block {
+  flex-direction: row;
+}
+.mode-portrait .sl-roi-block {
+  flex-direction: column;
+}
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <h2 class="text-3xl font-extrabold mb-2" style="color: #0F172A;">Measurable Impact</h2>
+      <p class="text-base" style="color: #64748B;">Real outcomes that justify the switch from manual video review.</p>
+    </div>
+    <!-- Metric cards -->
+    <div class="sl-benefits-grid grid gap-5 mb-8">
+      <!-- Card 1 -->
+      <div class="rounded-xl p-6 flex flex-col gap-2" style="background-color: #F8FAFC; border: 1px solid #E2E8F0;">
+        <span class="text-xs font-bold tracking-widest uppercase" style="color: #2563EB;">Time Savings</span>
+        <span class="text-4xl font-extrabold" style="color: #0F172A;">90%</span>
+        <p class="text-sm leading-relaxed" style="color: #64748B;">Reduction in manual video review time. AI processes what used to take your team hours in seconds.</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="rounded-xl p-6 flex flex-col gap-2" style="background-color: #F8FAFC; border: 1px solid #E2E8F0;">
+        <span class="text-xs font-bold tracking-widest uppercase" style="color: #2563EB;">Discovery</span>
+        <span class="text-4xl font-extrabold" style="color: #0F172A;">100%</span>
+        <p class="text-sm leading-relaxed" style="color: #64748B;">Of video content becomes searchable — every frame, word, and object is indexed and findable.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="rounded-xl p-6 flex flex-col gap-2" style="background-color: #F8FAFC; border: 1px solid #E2E8F0;">
+        <span class="text-xs font-bold tracking-widest uppercase" style="color: #F59E0B;">Hidden Insights</span>
+        <span class="text-4xl font-extrabold" style="color: #0F172A;">Unlocked</span>
+        <p class="text-sm leading-relaxed" style="color: #64748B;">Patterns, sentiment shifts, and micro-details that human reviewers miss at speed are surfaced automatically.</p>
+      </div>
+      <!-- Card 4 -->
+      <div class="rounded-xl p-6 flex flex-col gap-2" style="background-color: #F8FAFC; border: 1px solid #E2E8F0;">
+        <span class="text-xs font-bold tracking-widest uppercase" style="color: #F59E0B;">Portability</span>
+        <span class="text-4xl font-extrabold" style="color: #0F172A;">4 Formats</span>
+        <p class="text-sm leading-relaxed" style="color: #64748B;">Export summaries, transcripts, and metadata to JSON, CSV, SRT, and PDF — fits into any workflow.</p>
+      </div>
+    </div>
+    <!-- ROI summary block -->
+    <div class="sl-roi-block flex items-center gap-6 rounded-xl p-6" style="background-color: #0F172A;">
+      <div class="flex-1">
+        <h3 class="text-lg font-bold text-white mb-1">The bottom line</h3>
+        <p class="text-sm leading-relaxed" style="color: #94A3B8;">Video Analyzer replaces hours of scrubbing with seconds of AI processing. Upload once, search everything, export anywhere — professional-grade intelligence from every piece of footage.</p>
+      </div>
+      <div class="flex-shrink-0 text-center px-6" style="border-left: 1px solid #334155;">
+        <span class="block text-3xl font-extrabold" style="color: #F59E0B;">Upload.</span>
+        <span class="block text-3xl font-extrabold" style="color: #2563EB;">Analyze.</span>
+        <span class="block text-3xl font-extrabold text-white">Understand.</span>
+      </div>
+    </div>
+  </div>
+</section>
