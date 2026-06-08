@@ -1,0 +1,64 @@
+<style>
+.mode-landscape .sl-foundation-layout {
+  flex-direction: row;
+}
+.mode-portrait .sl-foundation-layout {
+  flex-direction: column;
+}
+.mode-landscape .sl-foundation-content {
+  width: 60%;
+}
+.mode-landscape .sl-foundation-visual {
+  width: 40%;
+}
+.mode-portrait .sl-foundation-content {
+  width: 100%;
+}
+.mode-portrait .sl-foundation-visual {
+  width: 100%;
+  max-height: 35%;
+}
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-foundation-layout flex h-full">
+    <!-- Left: Problem / Solution -->
+    <div class="sl-foundation-content flex flex-col justify-center p-12 gap-10">
+      <!-- Problem -->
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background-color: #FEF3C7;">
+            <svg class="w-4 h-4" style="color: #F59E0B;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h2 class="text-xs font-bold tracking-widest uppercase" style="color: #F59E0B;">The Problem</h2>
+        </div>
+        <h3 class="text-2xl font-bold mb-3" style="color: #0F172A;">Video is a black box</h3>
+        <p class="text-base leading-relaxed" style="color: #475569;">
+          Teams spend hours scrubbing through footage to find a single moment. Metadata is sparse, search is impossible, and insights stay locked inside the timeline. Manual review doesn't scale — every new video multiplies the backlog.
+        </p>
+      </div>
+      <!-- Divider -->
+      <div class="w-16 h-1 rounded-full" style="background-color: #2563EB;"></div>
+      <!-- Solution -->
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-8 h-8 rounded-lg flex items-center justify-center" style="background-color: #DBEAFE;">
+            <svg class="w-4 h-4" style="color: #2563EB;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+          </div>
+          <h2 class="text-xs font-bold tracking-widest uppercase" style="color: #2563EB;">The Solution</h2>
+        </div>
+        <h3 class="text-2xl font-bold mb-3" style="color: #0F172A;">AI that watches so you don't have to</h3>
+        <p class="text-base leading-relaxed" style="color: #475569;">
+          Video Analyzer processes every upload with AI — generating summaries, scene maps, object detection, transcripts, and sentiment graphs automatically. Upload once, search everything. What took hours now takes seconds.
+        </p>
+      </div>
+    </div>
+    <!-- Right: Visual -->
+    <div class="sl-foundation-visual flex items-center justify-center" style="background: linear-gradient(180deg, #0F172A 0%, #1E293B 100%);">
+      <img
+        src="http://localhost:8001/common/image-generation?prompt=Abstract%20visualization%20of%20AI%20processing%20video%20frames%20with%20glowing%20blue%20neural%20network%20connections%20analyzing%20scenes%20on%20a%20dark%20slate%20background%20minimal%20futuristic"
+        alt="AI video processing visualization"
+        class="w-full h-full object-cover opacity-80"
+      />
+    </div>
+  </div>
+</section>
