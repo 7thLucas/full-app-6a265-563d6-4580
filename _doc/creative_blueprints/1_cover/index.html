@@ -1,0 +1,53 @@
+<style>
+.mode-landscape .sl-cover-layout {
+  flex-direction: row;
+}
+.mode-portrait .sl-cover-layout {
+  flex-direction: column;
+}
+.mode-landscape .sl-cover-text {
+  width: 55%;
+}
+.mode-landscape .sl-cover-visual {
+  width: 45%;
+}
+.mode-portrait .sl-cover-text {
+  width: 100%;
+}
+.mode-portrait .sl-cover-visual {
+  width: 100%;
+  max-height: 40%;
+}
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-cover-layout flex h-full">
+    <!-- Left: Text column -->
+    <div class="sl-cover-text flex flex-col justify-between p-12">
+      <div>
+        <div class="flex items-center gap-2 mb-8">
+          <div class="w-10 h-10 rounded-xl flex items-center justify-center" style="background-color: #2563EB;">
+            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <span class="text-sm font-semibold tracking-wide uppercase" style="color: #2563EB;">Video Analyzer</span>
+        </div>
+        <h1 class="text-5xl font-extrabold leading-tight mb-6" style="color: #0F172A;">
+          Every Frame.<br/>Every Word.<br/>Understood.
+        </h1>
+        <p class="text-lg leading-relaxed max-w-md" style="color: #475569;">
+          Upload any video and get instant AI-powered summaries, scene breakdowns, transcripts, and sentiment analysis — turning raw footage into searchable, actionable intelligence.
+        </p>
+      </div>
+      <div class="mt-8">
+        <data-attribution />
+      </div>
+    </div>
+    <!-- Right: Visual anchor -->
+    <div class="sl-cover-visual flex items-center justify-center p-8" style="background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);">
+      <img
+        src="http://localhost:8001/common/image-generation?prompt=Minimalist%20futuristic%20dashboard%20showing%20video%20analysis%20with%20scene%20timeline%20waveforms%20and%20AI%20insights%20on%20a%20clean%20light%20background%20professional%20product%20screenshot%20style"
+        alt="Video Analyzer dashboard preview"
+        class="w-full h-auto max-h-full rounded-2xl shadow-lg object-cover"
+      />
+    </div>
+  </div>
+</section>
